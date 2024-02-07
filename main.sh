@@ -23,3 +23,4 @@ echo "" >> .proxies.txt
 cat proxy-list/proxies_anonymous/all.txt >> .proxies.txt
 sort -u .proxies.txt > proxies.txt
 rm .proxies.txt
+if [ -f "checked_proxies.txt" ]; then rm checked_proxies.txt; fi
